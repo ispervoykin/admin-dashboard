@@ -1,0 +1,165 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300&display=swap');
+
+:root {
+    font-size: calc(0.625rem + 0.4vw);
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+}
+
+.sidebar {
+    background-color: rgb(155, 155, 248);
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    gap: 50px;
+    color: white;
+    padding: 1rem;
+}
+
+#dashboard {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 2rem;
+}
+
+.icon {
+    width: 2rem;
+}
+
+.sidebar-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar-links > li {
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+#dashboard > img {
+    width: 5rem;
+}
+
+.header {
+    grid-column: 2;
+    background-color: white;
+    gap: 20px;
+    padding-bottom: 1rem;
+}
+
+.upper, .lower {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 3rem;
+    padding-right: 5rem;
+}
+
+.upper .left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.upper .right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.upper .left input {
+    width: 30rem;
+    height: 1.5rem;
+    border-radius: 20px;
+    background-color: rgb(220, 220, 220);
+    border: none;
+}
+
+.lower .left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.lower .left .profile-picture {
+    width: 6rem;
+    height: 6rem;
+}
+
+.lower .left div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.lower .right {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.lower .right * {
+    cursor: pointer;
+    width: 6rem;
+    height: 2rem;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(179, 116, 0);
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+}
+
+.content {
+    grid-column: 2;
+    background-color: rgb(197, 197, 197);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 2rem 2rem;
+}
+
+.projects {
+    padding-right: 2rem;
+}
+
+.project-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.profile-picture {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+.card {
+    background-color: white;
+}
+
+.right-bar {
+    display: grid;
+}
+
+.announcements > div:first-child, .projects > div:first-child {
+    margin-bottom: 20px;
+}
+
+.announcement-cards {
+    display: grid;
+    gap: 20px;
+}
