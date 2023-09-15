@@ -1,13 +1,13 @@
 @import "reset.css";
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300&display=swap');
-
-:root {
-    font-size: calc(0.625rem + 0.4vw);
-    color: #082f49;
+@font-face {
+    font-family: "Mooli";
+    src: url("../assets/Mooli-Regular.ttf");
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-size: calc(0.625rem + 0.4vw);
+    color: #082f49;
+    font-family: "Mooli", Verdana, Arial, Helvetica, sans-serif;
 }
 
 .icon {
@@ -105,7 +105,7 @@ h1 {
 }
 
 .upper .left input {
-    width: 57rem;
+    width: 50rem;
     height: 2rem;
     border-radius: 10px;
     background-color: rgb(220, 220, 220);
